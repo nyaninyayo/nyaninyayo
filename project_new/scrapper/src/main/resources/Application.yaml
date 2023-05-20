@@ -1,0 +1,2 @@
+app.test = 1234
+app.scheduler.interval=5000
