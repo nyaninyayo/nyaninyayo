@@ -2,5 +2,6 @@ package scheduler;
 
 import java.time.Duration;
 
-public class Scheduler {
+public record Scheduler(Duration interval) {
+
 }
