@@ -1,3 +1,2 @@
-app.test = 1234
-server.port=8080
-springdoc.swagger-ui.path=/swagger-ui
+app:test = 1234
+bottoken. ${BOT_TOKEN}

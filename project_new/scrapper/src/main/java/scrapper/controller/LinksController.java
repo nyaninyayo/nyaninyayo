@@ -1,15 +1,17 @@
-package controllers;
+package scrapper.controller;
 
 import org.springframework.web.bind.annotation.*;
-import dto.AddLinkRequest;
-import dto.ListLinkResponse;
-import dto.RemoteLinkResponse;
+import scrapper.dto.AddLinkRequest;
+import scrapper.dto.ListLinkResponse;
+import scrapper.dto.RemoteLinkResponse;
+
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 
-@RestControllerAdvice
+@RestController
 public class LinksController {
 
-    @GetMapping("/links")
+    @GetMapping(path = "/links", produces = APPLICATION_JSON_VALUE)
     public ListLinkResponse getLinks(@RequestParam("Tg-Chat-Id") long idChat) {
         return null;
     }

@@ -1,2 +1,11 @@
-app.test = 1234
-app.scheduler.interval = 5000
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+
+app:
+  test: 1234
+  scheduler:
+    interval: 10000
+
+server:
+  port: 8077

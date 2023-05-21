@@ -1,4 +1,4 @@
-package scheduler;
+package scrapper.scheduler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,10 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class LinkUpdaterScheduler {
-    private static final Logger logger = LoggerFactory.getLogger(LinkUpdaterScheduler.class);
+    private static final Logger log =
+            LoggerFactory.getLogger(LinkUpdaterScheduler.class);
 
-    @Scheduled(fixedDelayString = "${app.scheduler.interval}")
+    @Scheduled(fixedDelayString = "#{schedulerIntervalMs}")
     public void update() {
-        logger.info("Updating links...");
+        log.info("Update info about urls");
     }
 }

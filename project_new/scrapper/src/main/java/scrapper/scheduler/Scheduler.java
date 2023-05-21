@@ -1,4 +1,4 @@
-package scheduler;
+package scrapper.scheduler;
 
 import java.time.Duration;
 

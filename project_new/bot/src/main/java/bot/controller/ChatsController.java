@@ -1,4 +1,4 @@
-package controller;
+package bot.controller;
 
 import org.springframework.web.bind.annotation.*;
 
