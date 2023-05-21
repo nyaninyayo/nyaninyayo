@@ -1,2 +1,4 @@
-app:test = 1234
-bottoken. ${BOT_TOKEN}
+app:
+  test: 1234
+bottoken:
+  ${BOT_TOKEN}
